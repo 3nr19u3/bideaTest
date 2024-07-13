@@ -1,0 +1,18 @@
+spring:
+    jpa:
+        database: POSTGRESQL
+        show-sql: false
+        hibernate:
+            ddl-auto: update
+    datasource:
+        url: ${DATABASE_URL}
+        username: ${DATABASE_USERNAME}
+        password: ${DATABASE_PASSWORD}
+        driverClassName: org.postgresql.Driver
+    sql:
+        init:
+            platform: postgres
+
+external:
+    service:
+        url: 'https://sbv2bumkomidlxwffpgbh4k6jm0ydskh.lambda-url.us-east-1.on.aws/'
