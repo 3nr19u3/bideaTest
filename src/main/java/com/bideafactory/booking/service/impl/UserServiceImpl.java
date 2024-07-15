@@ -2,6 +2,7 @@ package com.bideafactory.booking.service.impl;
 
 import com.bideafactory.booking.dto.UserDto;
 import com.bideafactory.booking.entity.User;
+import com.bideafactory.booking.exception.BadRequestException;
 import com.bideafactory.booking.exception.ResourceNotFoundException;
 import com.bideafactory.booking.mapper.UserMapper;
 import com.bideafactory.booking.repository.UserRepository;
@@ -21,13 +22,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto registerUser(UserDto userDto) {
-        try{
+            //check if the number phone already exist
+            if(userRepository.existsByPhoneNumber(userDto.phoneNumber()))
+                throw new BadRequestException("PhoneNumber is already registered!");
+
             User user = UserMapper.mapToUse(userDto);
             User user1 = userRepository.save(user);
             return UserMapper.mapToUserDto(user1);
-        }catch (Exception ex){
-            throw new RuntimeException(ex.getMessage());
-        }
     }
 
     @Override

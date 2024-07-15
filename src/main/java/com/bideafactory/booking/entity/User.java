@@ -30,7 +30,7 @@ public class User {
     private int age;
 
     @Column(name="phone_numeber",nullable = false,unique = true)
-    private Long phoneNumber;
+    private String phoneNumber;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Booking> booking = new ArrayList<>();
