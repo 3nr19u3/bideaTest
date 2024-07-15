@@ -29,7 +29,8 @@
 
 ## Si no usas Docker:
 - Puedes Abrir el repositorio  clonado desde tu IDE favorito (Intellij, Eclipse, STS, Etc)<br>
-- Una vez abierto puedes cambiar los valores de la configuracion en el file llamado application.yml <br>desde como se encuentra en el lado izquierdo a como esta en el lado derecho de la imagen adjunta (Imagen 1)<br>
+- Una vez abierto puedes cambiar los valores de la configuracion en el file llamado application.yml <br>desde como se encuentra en el lado izquierdo a como esta en el lado derecho de la imagen adjunta<br>
+![Captura de pantalla 2024-07-15 012824](https://github.com/user-attachments/assets/61394d54-5ff9-4ce2-954d-afbebaced419)
 - Luego de cambiar estosa valores puedes seguir creando tu base de datos en postgres la cual llamaras por default "bookingdb"<br>
 - Seguidamente ejecutaras el programa apoyandote de tu IDE (una buena opcion, es ejecutar la clase principal del proyecto directamente que seria esta: BookingServiceApplication.java)<br>
 - Si prefieres levantarlo usando la terminal, puedes considerar desde la raiz del proyecto ejecutar el comando: **./mvnw spring-boot:run** (ejecuta una aplicacion de spring-boot apoyandose de maven)<br>
@@ -52,6 +53,18 @@
 <br>
 <br>
 
-![Untitled-2024-03-23-2008]([https://github.com/3nr19u3/java-microservices/assets/46394434/99974881-f9c0-46c4-b393-87df8f64ab35](https://github.com/3nr19u3/bideaTest/blob/main/Captura%20de%20pantalla%202024-07-15%20012824.png))
+## Algunas evidencias!
+
+![Captura de pantalla 2024-07-15 025356](https://github.com/user-attachments/assets/e066fbd5-9c1e-4eb1-b6bd-fbaa0bbc89e9)
+
+![Captura de pantalla 2024-07-15 025413](https://github.com/user-attachments/assets/62f6fef5-b42c-4c2c-a6b3-ffa0ee3b926a)
+
+![Captura de pantalla 2024-07-15 025437](https://github.com/user-attachments/assets/d41dfcf1-39fc-41e6-a2d7-6a5cb2c13b63)
+
+![Captura de pantalla 2024-07-15 025451](https://github.com/user-attachments/assets/71ced24e-289b-4459-850a-356024c2281f)
+
+![Captura de pantalla 2024-07-15 025608](https://github.com/user-attachments/assets/da6b49fa-f8f9-4492-b048-5cbae531b91a)
+
+![Captura de pantalla 2024-07-15 025702](https://github.com/user-attachments/assets/e8ccf993-fab6-46f2-817e-9a53a0de4bbd)
 
 <br>
